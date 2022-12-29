@@ -4,7 +4,7 @@
 To develop a Django application to store and retrieve data from a database using Object Relational Mapping(ORM).
 
 ## Entity Relationship Diagram
-![](relationshipdiagram.png)
+![](entity.png)
 
 ## DESIGN STEPS
 
@@ -28,15 +28,14 @@ class Employee(models.Model):
       Employee_name=models.CharField(max_length=100)
       Employee_post=models.CharField(max_length=100)
       Employee_salary=models.IntegerField()
-      
+      Employee_age=models.IntegerField()
 
 class EmployeeAdmin(admin.ModelAdmin):
 
-    list_display=('Employee_id','Employee_name','Employee_post','Employee_salary')
-
+    list_display=('Employee_id','Employee_name','Employee_post','Employee_salary','Employee_age')
 
 ## OUTPUT
-![](ormproject.png)
+![](djangoorm.png)
 
 
 ## RESULT
